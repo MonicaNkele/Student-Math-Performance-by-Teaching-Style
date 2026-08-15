@@ -4,7 +4,7 @@ library(haven)
 
 # Lire le fichier .sav et exporter en DataFrame .csv
 df <- read_sav("data/raw/ProjectData.sav")
-write_csv(df, "data/raw/NewProjectData.csv")
+write_csv(as.data.frame(lapply(df, as.numeric)), "data/processed/data.csv")
 
 # Afficher les métadonnées du fichier .sav
 attributes(df)
