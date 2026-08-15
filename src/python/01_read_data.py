@@ -2,10 +2,10 @@
 import pyreadstat
 
 # Lire le fichier .sav et le convertir en DataFrame pandas
-df, meta = pyreadstat.read_sav('Student-Math-Performance-by-Teaching-Style/data/raw/ProjectData.sav')
+df, meta = pyreadstat.read_sav('data/raw/ProjectData.sav')
 
 # Convertir le DataFrame en fichier CSV
-df.to_csv('Student-Math-Performance-by-Teaching-Style/data/raw/ProjectData.csv', index=False)
+df.to_csv('data/raw/ProjectData.csv', index=False)
 
 # Afficher les métadonnées du fichier .sav
 print(meta.column_names_to_labels)
