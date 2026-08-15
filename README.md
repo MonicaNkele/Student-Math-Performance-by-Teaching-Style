@@ -10,7 +10,7 @@ Fichier Kaggle (https://www.kaggle.com/datasets/soumyadiptadas/students-math-sco
 
 ## Structure du dépôt
 ```
-student-math-performance/
+student-math-performance-by-teaching-style/
 ├── README.md
 ├── data/
 │   ├── raw/                # fichier .sav original, jamais modifié
